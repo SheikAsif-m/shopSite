@@ -16,98 +16,95 @@
 </head>
 
 <body>
-    <!-- <div class="container-fluid"> -->
-    <header> Dapp
-        <div class="header-right">
-            <a href="#home" style="color: black">How it works</a>
-            <a href="#contact" style="color: black">How it benefits</a>
-        </div>
-    </header>
-    <!-- <div class="row"> -->
-    <!-- <div class="container-fluid"> -->
-    <div class="row" class="bgTexts">
-        <div class="bgImage" style="background-image: url('homePageBGImage1.jpg');">
-            <span class="bgText">Reinventing<br>Dining<br>Experience</span>
+    <div class="container-fluid">
+        <header> Dapp
+            <div class="header-right">
+                <a href="#home" style="color: black">How it works</a>
+                <a href="#contact" style="color: black">How it benefits</a>
+            </div>
+        </header>
+        <!-- <div class="row"> -->
+        <!-- <div class="container-fluid"> -->
+        <div class="row" class="bgTexts">
+            <div class="bgImage" style="background-image: url('homePageBGImage1.jpg');">
+                <span class="bgText">Reinventing<br>Dining<br>Experience</span>
 
-            <form class="form" id="loginForm">
-                <input type="text" id="restaurantId" placeholder="Restaurant ID"> <br/>
-                <input type="password" id="password" placeholder="Password"> <br>
-                <button type="submit" id="signInBtn">Sign in</button> <br>
+                <form class="form" id="loginForm" class="col-3">
+                    <input type="text" id="restaurantId" placeholder="Restaurant ID"> <br/>
+                    <input type="password" id="password" placeholder="Password"> <br>
+                    <button type="submit" class="submitBtnStyle">Sign in</button> <br>
 
-                <span class="formLinks1">Problems signing in?</span><br>
-                <span class="formLinks2" class="signUp" onclick="openSignUpForm()">Create account</span>
+                    <a class="formLinks1" style="cursor: pointer">Problems signing in?</a><br>
+                    <a class="formLinks2" id="createAccountBtn" onclick="openCreateAccountForm()">Create account</a>
 
-            </form>
+                </form>
+                <form class="form" id="signUpForm" style="display: none">
+                    <input type="text" id="emailId" placeholder="email ID"> <br/>
+                    <input type="password" id="password" placeholder="Password"> <br>
+                    <button type="submit" class="submitBtnStyle">Create account</button> <br>
 
-            <form class="form" id="signUpForm" style="display: none">
-                <input type="text" id="restaurantId" placeholder="Restaurant ID"> <br/>
-                <input type="password" id="password" placeholder="Password"> <br>
-                <button type="submit" class="signUp">Create account</button> <br>
+                    <span class="formLinks1" onclick="openLinForm()">Already have an account?</span> <br>
+                    <a class="formLinks2" id="loginBtn" onclick="openLoginForm()" style="left: 45%">Log in</a>
 
-                <span class="formLinks1">Problems signing up?</span><br>
-                <span class="formLinks2" id="signInBtn" onclick="openSignInForm()">sign in</span>
-
-            </form>
-
-            <!-- <div></div> -->
-            <div class="row">
-                <a href="#home"><img src="appleIcon.jpg" width="180" height="53" id="appleIcon"></a>
-                <a href="#home"><img src="googleIcon.jpg" width="180" height="53" id="googleIcon"></a>
+                </form>
+                <!-- <div></div> -->
+                <div class="row">
+                    <a href="#home"><img src="appleIcon.jpg" width="180" height="53" id="appleIcon"></a>
+                    <a href="#home"><img src="googleIcon.jpg" width="180" height="53" id="googleIcon"></a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="div">
-
-        </div>
-    </div>
-    <div class="row">
-        <div class="bgImage2" style="background-image: url('homePageBGImage2.jpg');">
-            <div class="container text-block">
-                <p class="bgImage2Text" style="font-family: 'Quicksand'">How it works</p>
+        <div class="row">
+            <div class="div">
             </div>
         </div>
-    </div>
-    <!-- </div> -->
-    <!-- </div> -->
+        <div class="row">
+            <div class="bgImage2" style="background-image: url('homePageBGImage2.jpg');">
+                <div class="container text-block">
+                    <p class="bgImage2Text" style="font-family: 'Quicksand'">How it works</p>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
 
-    <div class="row ">
-        <footer>
-            <!-- <div class="container-fluid "> -->
-            <div class="row ">
-                <div class="col-3 ">2019 Dapp Inc.</div>
-                <div class="col-6 ">
-                    <div class="row justify-content-center ">
-                        <div class="col-1 "></div>
-                        <div class="col ">
-                            <a href="privacy.html ">
-                                <font color="white ">Privacy</font>
-                            </a>
-                        </div>
-                        <div class="col ">
-                            <a href="accessibility.html ">
-                                <font color="white ">Accessibility</font>
-                            </a>
-                        </div>
-                        <div class="col ">
-                            <a href="terms.html ">
-                                <font color="white ">Terms</font>
-                            </a>
+        <div class="row ">
+            <footer>
+                <!-- <div class="container-fluid "> -->
+                <div class="row ">
+                    <div class="col-3 ">2019 Dapp Inc.</div>
+                    <div class="col-6 ">
+                        <div class="row justify-content-center ">
+                            <div class="col-1 "></div>
+                            <div class="col ">
+                                <a href="privacy.html ">
+                                    <font color="white ">Privacy</font>
+                                </a>
+                            </div>
+                            <div class="col ">
+                                <a href="accessibility.html ">
+                                    <font color="white ">Accessibility</font>
+                                </a>
+                            </div>
+                            <div class="col ">
+                                <a href="terms.html ">
+                                    <font color="white ">Terms</font>
+                                </a>
+                            </div>
                         </div>
                     </div>
+                    <div class="col " style="float: right ">
+                        <a href="# "><i class="fa fa-facebook "></i></a>
+                        <a href="# "><i class="fa fa-twitter "></i></a>
+                        <a href="# "><i class="fa fa-youtube "></i></a>
+                        <a href="# "><i class="fa fa-linkedin "></i></a>
+                        <a href="# "><i class="fa fa-instagram "></i></a>
+                    </div>
                 </div>
-                <div class="col " style="float: right ">
-                    <a href="# "><i class="fa fa-facebook "></i></a>
-                    <a href="# "><i class="fa fa-twitter "></i></a>
-                    <a href="# "><i class="fa fa-youtube "></i></a>
-                    <a href="# "><i class="fa fa-linkedin "></i></a>
-                    <a href="# "><i class="fa fa-instagram "></i></a>
-                </div>
-            </div>
-            <!-- </div> -->
-        </footer>
+                <!-- </div> -->
+            </footer>
+        </div>
     </div>
-    <!-- </div> -->
     <script src="dapp.js"></script>
 </body>
 

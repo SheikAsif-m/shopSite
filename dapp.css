@@ -309,15 +309,12 @@ a:link {
     border-radius: 4%;
     padding: 2%;
     letter-spacing: 1px;
+    align-items: center;
     /* padding-left: 4% */
 }
 
 input[type=text],
 input[type=password] {
-    /* width: 80%;
-    align-items: center;
-    padding: 2%;
-    font-size: 100%; */
     width: 270px;
     height: 35.46px;
     padding: 16px 20px;
@@ -327,7 +324,7 @@ input[type=password] {
     font-size: 17.64px;
 }
 
-#signInBtn {
+.submitBtnStyle {
     position: absolute;
     width: 270px;
     height: 35.46px;
@@ -339,7 +336,7 @@ input[type=password] {
     align-items: center;
     text-align: center;
     font-weight: normal;
-    /* border-radius: 5px; */
+    cursor: pointer;
 }
 
 .div {
@@ -369,19 +366,23 @@ input[type=password] {
     position: absolute;
     font-size: 13px;
     color: #000000;
-    font-weight: 700;
-    padding-top: 10%;
-    padding-left: 18%;
     font-weight: 900;
+    left: 30%;
+    bottom: 20%;
 }
 
 .formLinks2 {
     position: absolute;
     font-size: 13px;
     color: #000000;
-    font-weight: 700;
-    padding-top: 13%;
-    padding-left: 23%;
+    font-weight: 800;
+    cursor: pointer;
+    left: 35%;
+    bottom: 9%;
+}
+
+.formLinks2 :hover {
+    background: yellow;
 }
 
 
